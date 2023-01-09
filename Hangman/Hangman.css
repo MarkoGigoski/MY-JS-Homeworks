@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: rgba(127, 157, 19);
+    color: white; 
+}
+#hangman{
+    display: flex;
+    justify-content: center;
+}
+#vanila{
+    display: flex;
+    justify-content: center;
+}
+#gameInfo{
+    display: flex;
+    justify-content: center;
+}
+/* Alphabet containers + btns etc. */
+#alphabetContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+#categorySelection{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    border: none;
+    border-radius: 5px;
+    color: rgba(127, 157, 19);
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    transition: 500ms;
+}
+.btn:hover{
+    opacity: 0.2;
+    transition: 500ms;
+}
+.btn:active{
+    opacity: 0.6;
+    transition: 500ms;
+    background-color: red;
+}
+/* Topic containers,btns etc. */
+#topicInfo{
+    display: flex;
+    justify-content: center;
+}
+.categoryBtn{
+    border: none;
+    border-radius: 5px;
+    color: rgba(127, 157, 19);
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    height: 40px;
+    width: 80px;
+    transition: 500ms;
+}
+.categoryBtn:active{
+    opacity: 0.4;
+    transition: 500ms;
+}
+#quoteDivClusterfuck{
+    display: flex;
+    justify-content: center;
+}
+#theChosenCategory{
+    display: flex;
+    justify-content: center;
+}
+#chosenCategory{
+    display: flex;
+    justify-content: center;
+}
+#gameContainer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+#guessContainer{
+    width: 150px;
+    height: 30px;
+    border: none;
+}
+#guessContainer ul, li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+}
+/* Hangman box container etc.*/
+#displayHangman{
+    height: 200px;
+    width: 200px;
+    background-color:rgba(127, 157, 19);
+    color: white;
+    border-top: none;
+    border-left: 1px dotted white;
+    border-right: 1px dotted white;
+    border-bottom: 1px dotted white;
+    display: flex;
+    justify-content: center;
+}
+#head{
+    height: 35px;
+    width: 35px;
+    border-radius: 85%;
+    background-color: white;
+    border: 1px solid white;
+    position: relative;
+    left: 28px;
+    visibility: hidden;
+}
+#leftArm{
+    height: 65px;
+    width: 10px;
+    background-color: white;
+    border: 1px solid white;
+    transform: rotate(30deg);
+    position: relative;
+    right: 20px;
+    top: 38px;
+    border-radius: 20%;
+    visibility: hidden;
+}
+#torso{
+    height: 100px;
+    width: 15px;
+    background-color: white;
+    border: 1px solid white;
+    position: relative;
+    top: 36px;
+    right: 10px;
+    border-radius: 20%;
+    visibility: hidden;
+}
+#rightArm{
+    height: 65px;
+    width: 10px;
+    background-color: white;
+    border: 1px solid white;
+    transform: rotate(330deg);
+    position: relative;
+    left: 1px;
+    top: 38px;
+    border-radius: 20%;
+    visibility: hidden;
+}
+#leftLeg{
+    height: 78px;
+    width: 10px;
+    background-color: white;
+    border: 1px solid white;
+    transform: rotate(30deg);
+    position: relative;
+    right: 63px;
+    top: 100px;
+    border-radius: 20%;
+    visibility: hidden;
+}
+#rightLeg{
+    height: 78px;
+    width: 10px;
+    background-color: white;
+    border: 1px solid white;
+    transform: rotate(330deg);
+    position: relative;
+    right: 20px;
+    top: 100px;
+    border-radius: 20%;
+    visibility: hidden;
+}
+/* Game Btns */
+#gameBtnsContainer{
+    display: flex;
+    justify-content: center;
+}
+.gameBtns{
+    border: none;
+    border-radius: 5px;
+    color: rgba(127, 157, 19);
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    height: 30px;
+    width: 70px;
+    transition: 500ms;
+}
+.gameBtns:active{
+    opacity: 0.4;
+    transition: 500ms;
+}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Hangman.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <!-- Intro-->
+    <h1 id="hangman"> HANGMAN</h1>
+    <h3 id="vanila"> VANILLA JAVASCRIPT HANGMAN GAME</h3>
+    <br />
+    <h4 id="gameInfo"> Use the alphabet below to guess the word, or click hint to get a clue.</h4>
+    <br />
+    <!--Container for alphabet buttons-->
+    <div id="alphabetContainer">
+        <input type="button" value="a" class="btn"/>
+        <input type="button" value="b" class="btn"/>
+        <input type="button" value="c" class="btn"/>
+        <input type="button" value="d" class="btn"/>
+        <input type="button" value="e" class="btn"/>
+        <input type="button" value="f" class="btn"/>
+        <input type="button" value="g" class="btn"/>
+        <input type="button" value="h" class="btn"/>
+        <input type="button" value="i" class="btn"/>
+        <input type="button" value="j" class="btn"/>
+        <input type="button" value="k" class="btn"/>
+        <input type="button" value="l" class="btn"/>
+        <input type="button" value="m" class="btn"/>
+        <input type="button" value="n" class="btn"/>
+        <input type="button" value="o" class="btn"/>
+        <input type="button" value="p" class="btn"/>
+        <input type="button" value="q" class="btn"/>
+        <input type="button" value="r" class="btn"/>
+        <input type="button" value="s" class="btn"/>
+        <input type="button" value="t" class="btn"/>
+        <input type="button" value="u" class="btn"/>
+        <input type="button" value="v" class="btn"/>
+        <input type="button" value="w" class="btn"/>
+        <input type="button" value="x" class="btn"/>
+        <input type="button" value="y" class="btn"/>
+        <input type="button" value="z" class="btn"/>
+        <input type="button" value="-" class="btn"/>
+    </div>
+    <br />
+    <p id="topicInfo"> Pick a topic </p>
+    <br />
+    <!-- Category selection DIV-->
+    <div id="categorySelection">
+        <button id="foodBtn" class="categoryBtn"> Food</button>
+        <button id="moviesBtn" class="categoryBtn"> Movies</button>
+        <button id="tvShowsBtn" class="categoryBtn"> TV shows</button>
+        <button id="gamesBtn" class="categoryBtn"> Games</button>
+    </div>
+    <br />
+    <div id="quoteDivClusterfuck">
+        <div id="chosenCategoryDiv"></div>
+    </div>
+    <br />
+    <!-- 80% of the Game container-->
+    <div id="gameContainer">
+        <div id="guessContainer"></div>
+        <br />
+        <div id="livesContainer"></div>
+        <br />
+        <div id="clueContainer">Clue - </div>
+        <br />
+        <div id="displayHangman">
+            <div id="head"></div>
+            <br />
+            <div id="leftArm"></div>
+            <div id="torso"></div>
+            <div id="rightArm"></div>
+            <br />
+            <div id="leftLeg"></div>
+            <div id="rightLeg"></div>
+        </div>
+        <br />
+    </div>
+    <br />
+    <!-- last container for play again/reset and hints-->
+    <div id="gameBtnsContainer">
+        <input type="button" value="HINT" id="hintBtn" class="gameBtns"/>
+        <input type="button" value="Play again" id="playAgainBtn" class="gameBtns"/>
+    </div>
+    <script src="./Hangman.js"></script>
+</body>
+</html>
